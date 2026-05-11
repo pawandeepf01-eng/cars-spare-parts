@@ -155,18 +155,6 @@ function App() {
       ),
     },
     {
-      path: "/emailverify",
-      element: (
-        <Userprotecting>
-          <div>
-            <Navbar/>
-            <Emailverification />
-            <Footer/>
-          </div>
-        </Userprotecting>
-      ),
-    },
-    {
       path: "/admin",
       element: (
         <Adminprotecting>
