@@ -22,7 +22,6 @@ import Adminuser from "./componets/Adminuser.jsx";
 import OrderSuccess from "./componets/Ordersucces.jsx";
 import Userprotecting from "./componets/Userprotecting.jsx";
 import Adminprotecting from "./componets/Adminprotecting.jsx";
-import Emailverification from "./componets/Emailverification.jsx";
 function App() {
   const router = createBrowserRouter([
     {
