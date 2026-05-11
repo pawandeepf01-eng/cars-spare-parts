@@ -21,10 +21,10 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://cars-spare-parts.onrender.com",
+      "https://dhiman-motors.vercel.app",
     ],
     credentials: true,
-  }),
+  })
 );
 
 
