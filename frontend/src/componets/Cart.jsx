@@ -12,7 +12,7 @@ function Cart() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/cart");
+        const res = await axios.get("https://cars-spare-parts.onrender.com/cart");
         setItems(res.data);
       } catch (err) {
         console.error("Error fetching:", err.message);
@@ -45,7 +45,7 @@ function Cart() {
   const removeItem = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:3000/api/deletecart/${id}`,
+        `https://cars-spare-parts.onrender.com/deletecart/${id}`,
       );
       setItems((prev) => prev.filter((item) => item._id !== id));
     } catch (err) {

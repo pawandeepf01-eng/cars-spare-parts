@@ -10,7 +10,7 @@ function Deleteproduct() {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:3000/api/products",
+          "https://cars-spare-parts.onrender.com/products",
         );
         setproducts(res.data);
       } catch (err) {
@@ -24,7 +24,7 @@ function Deleteproduct() {
      const deleteCartItem = async (id) => {
     try {
       const res = await axios.delete(
-        `http://localhost:3000/api/delete/${id}`, {
+        `https://cars-spare-parts.onrender.com/delete/${id}`, {
     withCredentials: true,
   }
       );

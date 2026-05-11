@@ -20,7 +20,7 @@ function Checkout() {
   const onSubmit = async (data) => {
     try {
       await axios.post(
-        "http://localhost:3000/api/addorder",
+        "https://cars-spare-parts.onrender.com/addorder",
         {
           items,
           totalItems,
@@ -57,7 +57,7 @@ useEffect(() => {
 
     // CART PRODUCTS
     try {
-      const res = await axios.get("http://localhost:3000/api/cart");
+      const res = await axios.get("https://cars-spare-parts.onrender.com/cart");
 
       setItems(res.data);
 

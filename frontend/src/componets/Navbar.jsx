@@ -26,7 +26,7 @@ function Navbar() {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/cart");
+        const res = await axios.get("https://cars-spare-parts.onrender.com/cart");
 
         setCartCount(res.data.length);
       } catch (err) {
@@ -41,7 +41,7 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:3000/api/logout", {
+      await axios.post("https://cars-spare-parts.onrender.com/logout", {
         withCredentials: true,
       });
 
