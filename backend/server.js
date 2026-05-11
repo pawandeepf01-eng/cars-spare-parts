@@ -16,10 +16,13 @@ app.use("/uploads", express.static("uploads"));
 app.use(express.json());
 coonectp();
 app.use(cookieparser());
+
 app.use(
   cors({
-    origin: 
+    origin: [
       "http://localhost:5173",
+      "https://cars-spare-parts.onrender.com",
+    ],
     credentials: true,
   }),
 );
