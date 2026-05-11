@@ -14,7 +14,7 @@ function Productdetail() {
  const addcart = async (data) => {
   try {
     const res = await axios.post(
-      "https://cars-spare-parts.onrender.com/addcart",
+      "https://cars-spare-parts.onrender.com/api/addcart",
       {
         name: data.name,
         price: data.price,
@@ -32,7 +32,7 @@ function Productdetail() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`https://cars-spare-parts.onrender.com/products/${id}`);
+        const res = await axios.get(`https://cars-spare-parts.onrender.com/api/products/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Error fetching product:", err.message);

@@ -10,7 +10,7 @@ function Adminuser() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("https://cars-spare-parts.onrender.com/showuser");
+        const res = await axios.get("https://cars-spare-parts.onrender.com/api/showuser");
         setItems(res.data);
       } catch (err) {
         console.log(err);
@@ -23,7 +23,7 @@ function Adminuser() {
   const deleteCartItem = async (id) => {
     try {
       const res = await axios.delete(
-        `https://cars-spare-parts.onrender.com/deleteuser/${id}`,
+        `https://cars-spare-parts.onrender.com/api/deleteuser/${id}`,
       );
 
       setItems((prev) => prev.filter((item) => item._id !== id));

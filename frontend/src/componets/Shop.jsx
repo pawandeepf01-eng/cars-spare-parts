@@ -10,7 +10,7 @@ function Shop() {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          "https://cars-spare-parts.onrender.com/products",
+          "https://cars-spare-parts.onrender.com/api/products",
         );
         setproducts(res.data);
       } catch (err) {

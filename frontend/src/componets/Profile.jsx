@@ -13,7 +13,7 @@ function Profile() {
 
 const fetchUser = async () => {
   try {
-    const res = await axios.get("https://cars-spare-parts.onrender.com/me", {
+    const res = await axios.get("https://cars-spare-parts.onrender.com/api/me", {
       withCredentials: true,
     });
 

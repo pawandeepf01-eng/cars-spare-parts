@@ -25,7 +25,7 @@ function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get("https://cars-spare-parts.onrender.com/products");
+        const res = await axios.get("https://cars-spare-parts.onrender.com/api/products");
         setproducts(res.data);
       } catch (err) {
         console.error("Error fetching:", err.message);
