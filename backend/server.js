@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://dhiman-motors.vercel.app/",
+      "https://dhiman-motors.vercel.app",
     ],
     credentials: true,
   })
