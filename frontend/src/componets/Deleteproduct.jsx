@@ -53,7 +53,7 @@ function Deleteproduct() {
             {/* Image */}
             <div className="relative overflow-hidden">
               <img
-                src={`http://localhost:3000/uploads/${product.img}`}
+                src={`https://cars-spare-parts.onrender.com/uploads/${product.img}`}
                 alt={product.name}
                 className="w-full h-[320px] object-cover group-hover:scale-110 transition duration-700"
               />
