@@ -141,7 +141,7 @@ function Userorder() {
                         className="flex items-center gap-4 bg-gray-50 p-4 rounded-2xl"
                       >
                         <img
-                          src={`http://localhost:3000/uploads/${item.img}`}
+                          src={`https://cars-spare-parts.onrender.com/uploads/${item.img}`}
                           alt={item.name}
                           className="w-20 h-20 rounded-2xl object-cover"
                         />
