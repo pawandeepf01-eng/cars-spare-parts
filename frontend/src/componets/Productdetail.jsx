@@ -51,7 +51,7 @@ function Productdetail() {
           {/* LEFT SIDE IMAGE */}
           <div className="bg-white rounded-[35px] overflow-hidden shadow-xl border border-gray-200">
             <img
-              src={`http://localhost:3000/uploads/${product.img}`}
+              src={`https://cars-spare-parts.onrender.com/uploads/${product.img}`}
               alt={product.name}
               className="w-full h-[350px] md:h-[650px] object-cover hover:scale-105 transition duration-700"
             />
