@@ -90,7 +90,7 @@ function Cart() {
                     {/* Image */}
                     <div className="w-full md:w-[240px] h-[220px] rounded-[25px] overflow-hidden">
                       <img
-                        src={`http://localhost:3000/uploads/${item.img}`}
+                        src={`https://cars-spare-parts.onrender.com/uploads/${item.img}`}
                         alt={item.name}
                         className="w-full h-full object-cover"
                       />

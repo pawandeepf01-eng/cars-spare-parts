@@ -268,7 +268,7 @@ useEffect(() => {
                 {/* IMAGE */}
                 <div className="w-[90px] h-[90px] rounded-2xl overflow-hidden flex-shrink-0">
                   <img
-                    src={`http://localhost:3000/uploads/${item.img}`}
+                    src={`https://cars-spare-parts.onrender.com/uploads/${item.img}`}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />
