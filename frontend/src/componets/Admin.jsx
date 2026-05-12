@@ -37,6 +37,8 @@ function Admin() {
       navigate("/")
     } catch (err) {
       setMessage(err.response?.data?.message || "Something went wrong");
+      console.log(err);
+      
     }
   };
 
